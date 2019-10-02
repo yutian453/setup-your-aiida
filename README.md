@@ -1,4 +1,4 @@
-# setup-your-aiida-
+# setup-your-aiida
 
 This is a guideline for setting up aiida on your supercomputer Grace/Thomas
 -----------
