@@ -1,6 +1,9 @@
 # setup-your-aiida-
-This is a guideline for setting up aiida on your supercomputer Grace/Thomas
 
+This is a guideline for setting up aiida on your supercomputer Grace/Thomas
+-----------
+
+--------
 1. Check prerequisites from the website below
 
    https://aiida-core.readthedocs.io/en/latest/install/prerequisites.html
