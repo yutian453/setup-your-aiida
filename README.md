@@ -1,7 +1,6 @@
 # setup-your-aiida-
 This is a guideline for setting up aiida on your supercomputer Grace/Thomas
 
-Steps
 1. Check prerequisites from the website below
 
    https://aiida-core.readthedocs.io/en/latest/install/prerequisites.html
@@ -13,3 +12,5 @@ Steps
 3. Install Plugins
 
    Note: Chosing the right branch of plugin is crucial before installation. You can go to github to find which branch is compatible with new version aiida.
+   Instruction of installing aiida-vasp plugin
+   
