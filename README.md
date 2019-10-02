@@ -44,28 +44,18 @@ This is a guideline for setting up aiida on your supercomputer Grace/Thomas
    This is my example on Grace (* parts are different on Thomas)
    
    > Computer label: "Grace" (* Thomas)
-   
    > Hostname: "grace.rc.ucl.ac.uk"  ( * thomas.rc.ucl.ac.uk )
-   
-   Description: Grace computer for aiida tests (*)
-   
-   Transport plugin: ssh
-   
-   Scheduler plugin: sge   
-   
-   Shebang line: #!/bin/bash -l
-   
-   Work directory on the computer: /home/*****/Scratch/scratch/{username}/aiida_run (* /scratch/scratch/{username}/aiida_run)
-   
-   Mpirun_command: gerun
-   
-   prepend_text: 
-   #$ -S /bin/bash 
-   (* #$ -S /bin/bash
-      
-      #$ -P ***
-      
-      #$ -A ***)
+   > Description: Grace computer for aiida tests (*)
+   > Transport plugin: ssh
+   > Scheduler plugin: sge   
+   >Shebang line: #!/bin/bash -l
+   > Work directory on the computer: /home/*****/Scratch/scratch/{username}/aiida_run (* /scratch/scratch/{username}/aiida_run)
+   > Mpirun_command: gerun
+   > prepend_text: 
+   > #$ -S /bin/bash 
+   > (* #$ -S /bin/bash
+   >  #$ -P ***
+   >  #$ -A ***)
    
     $(aiida) verdi computer configure ssh Grace (Thomas)
    
