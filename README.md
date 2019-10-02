@@ -66,24 +66,57 @@ This is a guideline for setting up aiida on your supercomputer Grace/Thomas
    
    Connection timeout: 30
    
-   Allow_ssh agent:
+   Allow_ssh agent: False
    
-   SSH proxy_command:
+   SSH proxy_command: empty
    
-   Compress file transfer:
+   Compress file transfer: True
    
-   GSS auth:
+   GSS auth: False
+    
+   GSS kex: False
    
-   GSS kex:
+   GSS deleg_creds: False
    
-   GSS deleg_creds:
+   GSS host: grace.rc.ucl.ac.uk
    
-   Load system host keys:
+   Load system host keys: True
    
    key policy: AutoAddPolicy
    
-   Connection cooldown time(s):
+   Connection cooldown time(s): 5.0
+ 
+ 6.Test connection to your supercomputer
+    
+    $ (aiida) verdi computer test Grace (* Thomas) 
+ 
+ 7. Set up code
      
+    Label: vasp  (quantumespresso)
+    
+    Description: vasp code for the aiida tests
+    
+    Default calculation input plugin: vasp.vasp (quantumespresso.pw)
+    
+    Installed on target computer: True
+    
+    Computer: Grace (Other computer you have set in aiida)
+    
+    Remote absolute path: /shared/ucl/apps/vasp/5.4.4-18apr2017/intel-2017/bin/vasp_std 
+    (/shared/ucl/apps/quantum-expresso/6.1/intel-2017/bin/pw.x)
+    
+    Prepend text:
+    
+    module load vasp/5.4.4-18apr2017/intel-2017-update1
+     
+     (module load xorg-utils/X11R7.7
+     
+      module load quantum-espresso/6.1-impi/intel2017)
+   
+    
+    
+    
+    
    
    
  
