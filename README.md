@@ -1,4 +1,4 @@
-# setup-your-aiida
+# Setup-your-aiida
 
 This is a guideline for setting up aiida on your supercomputer Grace/Thomas
 -----------
@@ -24,7 +24,9 @@ This is a guideline for setting up aiida on your supercomputer Grace/Thomas
    
 5. Setup a computer
    
-   $ verdi computer setup
+   Be sure that you are able to connect to your cluster without typing your password.
+   
+   $(aiida) verdi computer setup
    
    This is my example on Grace (* parts are different on Thomas)
    
@@ -49,5 +51,7 @@ This is a guideline for setting up aiida on your supercomputer Grace/Thomas
    (* #$ -S /bin/bash
       #$ -P Gold
       #$ -A ***)
+   $(aiida) verdi computer configure ssh Grace (Thomas)
+   
    
  
