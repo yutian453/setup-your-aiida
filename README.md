@@ -44,50 +44,62 @@ This is a guideline for setting up aiida on your supercomputer Grace/Thomas
    This is my example on Grace (* parts are different on Thomas)
    
    > Computer label: "Grace" (* Thomas)
+   
    > Hostname: "grace.rc.ucl.ac.uk"  ( * thomas.rc.ucl.ac.uk )
+   
    > Description: Grace computer for aiida tests (*)
+   
    > Transport plugin: ssh
+   
    > Scheduler plugin: sge   
+   
    >Shebang line: #!/bin/bash -l
+   
    > Work directory on the computer: /home/*****/Scratch/scratch/{username}/aiida_run (* /scratch/scratch/{username}/aiida_run)
+   
    > Mpirun_command: gerun
+   
    > prepend_text: 
+   
    > #$ -S /bin/bash 
+   
    > (* #$ -S /bin/bash
+   
    >  #$ -P ***
+   
    >  #$ -A ***)
    
     $(aiida) verdi computer configure ssh Grace (Thomas)
    
-   User name: ucapy** (*)
+   > User name: ucapy** (*)
    
-   port Nr: 22
+   > port Nr: 22
    
-   Look_for_keys: True
+   > Look_for_keys: True
    
-   SSH key file: you can leave it empty to use the default SSH key
+   > SSH key file: you can leave it empty to use the default SSH key
    
-   Connection timeout: 30
+   > Connection timeout: 30
    
-   Allow_ssh agent: False
+   > Allow_ssh agent: False
    
-   SSH proxy_command: empty
+   > SSH proxy_command: empty
    
-   Compress file transfer: True
+   > Compress file transfer: True
    
-   GSS auth: False
+   > GSS auth: False
     
-   GSS kex: False
+   > GSS kex: False
    
-   GSS deleg_creds: False
+   > GSS deleg_creds: False
    
-   GSS host: grace.rc.ucl.ac.uk
+   > GSS host: grace.rc.ucl.ac.uk
    
-   Load system host keys: True
+   > Load system host keys: True
    
-   key policy: AutoAddPolicy
+   > key policy: AutoAddPolicy
    
-   Connection cooldown time(s): 5.0
+   > Connection cooldown time(s): 5.0
  
 
 ----
