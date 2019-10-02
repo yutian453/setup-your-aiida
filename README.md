@@ -43,9 +43,9 @@ This is a guideline for setting up aiida on your supercomputer Grace/Thomas
    
    This is my example on Grace (* parts are different on Thomas)
    
-   Computer label: "Grace" (* Thomas)
+   > Computer label: "Grace" (* Thomas)
    
-   Hostname: "grace.rc.ucl.ac.uk"  ( * thomas.rc.ucl.ac.uk )
+   > Hostname: "grace.rc.ucl.ac.uk"  ( * thomas.rc.ucl.ac.uk )
    
    Description: Grace computer for aiida tests (*)
    
