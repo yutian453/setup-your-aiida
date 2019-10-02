@@ -42,16 +42,48 @@ This is a guideline for setting up aiida on your supercomputer Grace/Thomas
    
    Shebang line: #!/bin/bash -l
    
-   Work directory on the computer: /home/ucapyba/Scratch/scratch/{username}/aiida_run (* /scratch/scratch/{username}/aiida_run)
+   Work directory on the computer: /home/*****/Scratch/scratch/{username}/aiida_run (* /scratch/scratch/{username}/aiida_run)
    
    Mpirun_command: gerun
    
    prepend_text: 
    #$ -S /bin/bash 
    (* #$ -S /bin/bash
-      #$ -P Gold
+      
+      #$ -P ***
+      
       #$ -A ***)
+   
    $(aiida) verdi computer configure ssh Grace (Thomas)
+   
+   User name: ucapy** (*)
+   
+   port Nr: 22
+   
+   Look_for_keys: True
+   
+   SSH key file: you can leave it empty to use the default SSH key
+   
+   Connection timeout: 30
+   
+   Allow_ssh agent:
+   
+   SSH proxy_command:
+   
+   Compress file transfer:
+   
+   GSS auth:
+   
+   GSS kex:
+   
+   GSS deleg_creds:
+   
+   Load system host keys:
+   
+   key policy: AutoAddPolicy
+   
+   Connection cooldown time(s):
+     
    
    
  
