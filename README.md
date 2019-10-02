@@ -109,26 +109,26 @@ This is a guideline for setting up aiida on your supercomputer Grace/Thomas
 ----
 **7. Set up code**
      
-    Label: vasp  (quantumespresso)
+   Label: vasp  (quantumespresso)
     
-    Description: vasp code for the aiida tests
+   Description: vasp code for the aiida tests
     
-    Default calculation input plugin: vasp.vasp (quantumespresso.pw)
+   Default calculation input plugin: vasp.vasp (quantumespresso.pw)
     
-    Installed on target computer: True
+   Installed on target computer: True
     
-    Computer: Grace (Other computer you have set in aiida)
+   Computer: Grace (Other computer you have set in aiida)
     
-    Remote absolute path: /shared/ucl/apps/vasp/5.4.4-18apr2017/intel-2017/bin/vasp_std 
+   Remote absolute path: /shared/ucl/apps/vasp/5.4.4-18apr2017/intel-2017/bin/vasp_std 
     (/shared/ucl/apps/quantum-expresso/6.1/intel-2017/bin/pw.x)
     
-    Prepend text:
+   Prepend text:
     
-    module load vasp/5.4.4-18apr2017/intel-2017-update1
+   module load vasp/5.4.4-18apr2017/intel-2017-update
+   
+   (module load xorg-utils/X11R7.7
      
-     (module load xorg-utils/X11R7.7
-     
-     module load quantum-espresso/6.1-impi/intel2017)
+   module load quantum-espresso/6.1-impi/intel2017)
    
     
     
