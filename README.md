@@ -28,7 +28,9 @@ This is a guideline for setting up aiida on your supercomputer Grace/Thomas
    
    Be sure that you are able to connect to your cluster without typing your password.
    
-   $(aiida) verdi computer setup
+   
+       $(aiida) verdi computer setup
+   
    
    This is my example on Grace (* parts are different on Thomas)
    
