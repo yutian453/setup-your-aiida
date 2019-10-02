@@ -12,15 +12,17 @@ This is a guideline for setting up aiida on your supercomputer Grace/Thomas
    https://aiida-core.readthedocs.io/en/latest/install/installation.html
 
 3. Activate aiida 
-   $ source ~/.virtualenvs/aiida/bin/activate
+        
+       $ source ~/.virtualenvs/aiida/bin/activate
+
 4. Install Plugins
 
    Note: Chosing the right branch of plugin is crucial before installation. You can go to github to find which branch is the latest version.
    Instruction of installing aiida-vasp plugin
    
-   $ (aiida) pip install aiida-vasp
+       $ (aiida) install aiida-vasp
    
-   $ (aiida) reentry scan -r aiida
+       $ (aiida) reentry scan -r aiida
    
 5. Setup a computer
    
@@ -111,7 +113,7 @@ This is a guideline for setting up aiida on your supercomputer Grace/Thomas
      
      (module load xorg-utils/X11R7.7
      
-      module load quantum-espresso/6.1-impi/intel2017)
+     module load quantum-espresso/6.1-impi/intel2017)
    
     
     
