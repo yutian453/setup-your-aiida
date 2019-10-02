@@ -22,8 +22,9 @@ This is a guideline for setting up aiida on your supercomputer Grace/Thomas
    $ reentry scan -r aiida
    
 5. Setup a computer
+   
    $ verdi computer setup
-   ---
+   
    This is my example on Grace (* parts are different on Thomas)
    Computer label: "Grace" (* Thomas)
    Hostname: "grace.rc.ucl.ac.uk"  ( * thomas.rc.ucl.ac.uk )
@@ -39,7 +40,4 @@ This is a guideline for setting up aiida on your supercomputer Grace/Thomas
       #$ -P Gold
       #$ -A ***)
    
-   mpiprocs_per_machine: "2"
-   prepend_text: |
-   module load mymodule
-   export NEWVAR=1
+ 
