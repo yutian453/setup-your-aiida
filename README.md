@@ -69,7 +69,7 @@ This is a guideline for setting up aiida on your supercomputer Grace/Thomas
    
    >  #$ -A ***)
    
-    $(aiida) verdi computer configure ssh Grace (Thomas)
+        $(aiida) verdi computer configure ssh Grace (Thomas)
    
    > User name: ucapy** (*)
    
@@ -104,8 +104,8 @@ This is a guideline for setting up aiida on your supercomputer Grace/Thomas
 
 ----
 **6.Test connection to your supercomputer**
-    
-    $ (aiida) verdi computer test Grace (* Thomas) 
+      
+         $(aiida) verdi computer test Grace (* Thomas) 
  
 
 ----
