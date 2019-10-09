@@ -1,3 +1,7 @@
+'''I will remore the asterisk after testing'''
+
+
+
 """Run a workflow from low kpoints to high kpoints"""
 from time import sleep
 import numpy as np
@@ -8,10 +12,12 @@ from aiida.engine import submit
 from aiida_vasp.utils.aiida_utils import get_data_class, get_data_node
 load_profile()
 
+
 def get_structure():
     structure = load_node(2968)
     return structure
 
+@calcfunction
 def launch_aiida_low_kpoints(structure, code_string, resources, label):
     Dict = DataFactory('dict')
     KpointsData = DataFactory("array.kpoints")
@@ -114,6 +120,7 @@ def launch_aiida_low_kpoints(structure, code_string, resources, label):
     node = submit(builder)
     return node
 
+@calcfunction
 def launch_aiida_medium_kpoints(structure, code_string, resources, label):
     Dict = DataFactory('dict')
     KpointsData = DataFactory("array.kpoints")
@@ -216,6 +223,7 @@ def launch_aiida_medium_kpoints(structure, code_string, resources, label):
     node = submit(builder)
     return node
 
+@calcfunction
 def launch_aiida_high_kpoints(structure, code_string, resources, label):
     Dict = DataFactory('dict')
     KpointsData = DataFactory("array.kpoints")
@@ -316,9 +324,9 @@ def launch_aiida_high_kpoints(structure, code_string, resources, label):
     builder.verbose = Bool(True)
 
     node = submit(builder)
-    return node
-
-def main(code_string, resources, group_name, sleep_seconds=60):
+ 
+@workfunction
+ def main(code_string, resources, group_name, sleep_seconds=60):
     group = load_group(group_name)
     structure = get_structure()
     node_low_kpoints = launch_aiida_low_kpoints(structure, code_string, resources,
