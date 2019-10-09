@@ -1,4 +1,4 @@
-"""I will remore the asterisk after testing """
+"""I will remove the asterisk after testing """
 
 
 
